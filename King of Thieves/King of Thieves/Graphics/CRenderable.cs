@@ -40,5 +40,6 @@ namespace King_of_Thieves.Graphics
         private Effect _shader;
         public VertexPositionColor[] vertices;
         private static VertexBuffer _vertexBuffer;
+        public float aspectRatio = (float)CGraphics.GPU.Viewport.Width / (float)CGraphics.GPU.Viewport.Height;
     }
 }
