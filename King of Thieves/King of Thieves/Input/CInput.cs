@@ -43,8 +43,8 @@ namespace King_of_Thieves.Input
             //MouseState x; x.
         }
 
-        public static bool getInputRelease();
-        public static bool getInputDown(); //not quite sure how to handle the mouse buttons yet.  Doesn't seem as simple as the other types.
+        public static bool getInputRelease(){return true;}
+        public static bool getInputDown() { return true; } //not quite sure how to handle the mouse buttons yet.  Doesn't seem as simple as the other types.
 
         public static int mouseX
         {

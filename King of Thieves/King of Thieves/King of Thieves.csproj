@@ -110,7 +110,6 @@
     <Compile Include="Graphics\CGraphics.cs" />
     <Compile Include="Graphics\CRenderable.cs" />
     <Compile Include="Graphics\CTextureAtlas.cs" />
-    <Compile Include="Graphics\CVertex.cs" />
     <Compile Include="Input\CInput.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />

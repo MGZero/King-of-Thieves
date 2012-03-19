@@ -9,6 +9,12 @@ namespace King_of_Thieves.Graphics
 {
     class CRenderable
     {
+
+        private Effect _shader;
+        public VertexPositionColor[] vertices;
+        private VertexBuffer _vertexBuffer;
+        public float aspectRatio = (float)CGraphics.GPU.Viewport.Width / (float)CGraphics.GPU.Viewport.Height;
+
         public CRenderable(Effect shader, params VertexPositionColor[] vertices)
         {
             _shader = shader;
@@ -37,9 +43,6 @@ namespace King_of_Thieves.Graphics
             _shader.CurrentTechnique = _shader.Techniques[index];
         }
 
-        private Effect _shader;
-        public VertexPositionColor[] vertices;
-        private VertexBuffer _vertexBuffer;
-        public float aspectRatio = (float)CGraphics.GPU.Viewport.Width / (float)CGraphics.GPU.Viewport.Height;
+        
     }
 }
